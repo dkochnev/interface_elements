@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>play_it</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Important if we are handling landscape mode, becasue the device width changes -->
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+<script type="text/javascript">
+window.onload=function(){
+
+// collecting elements
+var b3s = document.getElementById('b3s');
+var b3n=document.getElementById('b3n');
+
+var c4s=document.getElementById('c4s');
+var c4n=document.getElementById('c4n');
+
+var d4s=document.getElementById('d4s');
+var d4n=document.getElementById('d4n');
+
+var e4s=document.getElementById('e4s');
+var e4n=document.getElementById('e4n');
+
+var f4s=document.getElementById('f4s');
+var f4n=document.getElementById('f4n');
+
+var g4s=document.getElementById('g4s');
+var g4n=document.getElementById('g4n');
+
+var a4s=document.getElementById('a4s');
+var a4n=document.getElementById('a4n');
+
+var b4s=document.getElementById('b4s');
+var b4n=document.getElementById('b4n');
+
+var c5s=document.getElementById('c5s');
+var c5n=document.getElementById('c5n');
+
+
+//playing welcome sound on mouse over
+b3n.onmouseover=function(){
+	b3s.play();
+	return false;};
+
+c4n.onmouseover=function(){
+	c4s.play();
+	return false;};
+
+	d4n.onmouseover=function(){
+	d4s.play();
+	return false;};
+
+	e4n.onmouseover=function(){
+	e4s.play();
+	return false;};
+
+	f4n.onmouseover=function(){
+	f4s.play();
+	return false;};
+
+	g4n.onmouseover=function(){
+	g4s.play();
+	return false;};
+
+	a4n.onmouseover=function(){
+	a4s.play();
+	return false;};
+
+	b4n.onmouseover=function(){
+	b4s.play();
+	return false;};
+
+	c5n.onmouseover=function(){
+	c5s.play();
+	return false;};
+
+};
+</script>
+
+
+</head>
+<body>
+	<div data-role="page"> <!-- HTML data attribute, jQuery uses this to style the different divs according to their role -->
+		<div data-role="header">
+			<h1>Play colors</h1>
+		</div>
+		<div data-role="content">	
+
+			
+					<div class="ui-grid-b">
+  					
+  			<div class="ui-block-a"><a id="b3n"><button type="button" data-theme="c" class="b3">B<SUP>3</SUP></button></a></div>
+  			<div class="ui-block-b"><a id="c4n"><button type="button" data-theme="c" class="c4">C<SUP>4</SUP></button></a></div>
+  			<div class="ui-block-c"><a id="d4n"><button type="button" data-theme="c" class="d4">D<SUP>4</SUP></button></a></div>
+					</div>
+					<div class="ui-grid-b">
+ 			<div class="ui-block-a"><a id="e4n"><button type="button" data-theme="c" class="e4">E<SUP>4</SUP></button></a></div>
+  			<div class="ui-block-b"><a id="f4n"><button type="button" data-theme="c" class="f4">F<SUP>4</SUP></button></a></div>
+  			<div class="ui-block-c"><a id="g4n"><button type="button" data-theme="c" class="g4">G<SUP>4</SUP></button></a></div>
+					</div>
+					<div class="ui-grid-b">
+ 			<div class="ui-block-a"><a id="a4n"><button type="button" data-theme="c" class="a4">A<SUP>4</SUP></button></a></div>
+  			<div class="ui-block-b"><a id="b4n"><button type="button" data-theme="c" class="b4">B<SUP>4</SUP></button></a></div>
+  			<div class="ui-block-c"><a id="c5n"><button type="button" data-theme="c" class="c5">C<SUP>5</SUP></button></a></div>
+		</div>
+	</div>
+
+<div id="wrap">
+	<section>
+	<audio id="b3s" controls="controls" preload="auto"><source src="audio/b3.mp3"></source></audio>
+	<audio id="c4s" controls="controls" preload="auto"><source src="audio/c4.mp3"></source></audio>
+	<audio id="d4s" controls="controls" preload="auto"><source src="audio/d4.mp3"></source></audio>
+	<audio id="e4s" controls="controls" preload="auto"><source src="audio/e4.mp3"></source></audio>
+	<audio id="f4s" controls="controls" preload="auto"><source src="audio/f4.mp3"></source></audio>
+	<audio id="g4s" controls="controls" preload="auto"><source src="audio/g4.mp3"></source></audio>
+	<audio id="a4s" controls="controls" preload="auto"><source src="audio/a4.mp3"></source></audio>
+	<audio id="b4s" controls="controls" preload="auto"><source src="audio/b4.mp3"></source></audio>
+	<audio id="c5s" controls="controls" preload="auto"><source src="audio/c5.mp3"></source></audio>
+	</section>
+</div>
+
+
+
+</body>
+</html>
